@@ -23,36 +23,21 @@ layout: default
       const articleTags = JSON.parse(article.dataset.tags ? article.dataset.tags : '[]');
 
       var displayArticle = false;
-      // TODO: Refactor code.
-      if (tag === '')
-      {
-        // Iterate over filters and display article when conditions are fullfilled.
-        filters.forEach((filter) => {
-          if (articleContent === filter.id && filter.checked)
-          {
+
+      // Iterate over filters and display article when conditions are fullfilled.
+      filters.forEach((filter) => {
+        if (filter.checked &&
+          articleContent === filter.name &&
+          (tag === '' ? true : articleTags.some(articleTag => articleTag === tag)))
+        {
             article.style.display = "flex";
             displayArticle = true;
-          }
-        })
-        if (!displayArticle)
-        {
-            article.style.display = "none";
         }
-      }
-      else
+      })
+
+      if (!displayArticle)
       {
-        // Iterate over filters and display article when conditions are fullfilled.
-        filters.forEach((filter) => {
-          if (articleContent === filter.id && filter.checked && articleTags.some(articleTag => articleTag === tag))
-          {
-            article.style.display = "flex";
-            displayArticle = true;
-          }
-        })
-        if (!displayArticle)
-        {
-            article.style.display = "none";
-        }
+          article.style.display = "none";
       }
 
     });
