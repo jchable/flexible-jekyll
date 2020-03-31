@@ -22,24 +22,21 @@ layout: default
       const articleContent = article.dataset.articleContent;
       const articleTags = JSON.parse(article.dataset.tags ? article.dataset.tags : '[]');
 
-      var displayArticle = false;
+      // Iterate over filters and check if article has to be displayed.
+      var hasToBeDisplayed = filters.some((filter) => {
+        return filter.name === articleContent &&
+          filter.checked &&
+          (tag === '' ? true : articleTags.some(articleTag => articleTag === tag))
+      });
 
-      // Iterate over filters and display article when conditions are fullfilled.
-      filters.forEach((filter) => {
-        if (filter.checked &&
-          articleContent === filter.name &&
-          (tag === '' ? true : articleTags.some(articleTag => articleTag === tag)))
-        {
-            article.style.display = "flex";
-            displayArticle = true;
-        }
-      })
-
-      if (!displayArticle)
+      if (hasToBeDisplayed)
       {
-          article.style.display = "none";
+        article.style.display = "flex";
       }
-
+      else
+      {
+        article.style.display = "none";
+      }
     });
   }
 </script>
