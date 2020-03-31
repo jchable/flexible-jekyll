@@ -936,6 +936,28 @@ table tfoot td {
   background-color: #ffffff;
 }
 
+.sidebar-content {
+  margin: 0;
+  padding: 10px;
+}
+
+.sidebar-content h3 {
+  margin: 0;
+}
+
+.sidebar-content ul {
+  padding: 0;
+}
+
+.sidebar-content li {
+  list-style-type: none;
+  margin: 5px;
+}
+
+.sidebar-content .tags li {
+  display: list-item;
+}
+
 .about {
   margin: 0 0 40px;
   text-align: center;
@@ -1410,6 +1432,12 @@ a.newer-posts:hover {
     background-color: #ffffff;
     -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+  }
+  .sidebar-content {
+    text-align: center;
+  }
+  .sidebar-content .tags li {
+    display: inline-block;
   }
   .sidebar footer {
     margin-bottom: 10px;
