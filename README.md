@@ -1,18 +1,6 @@
-# Flexible-Jekyll is a simple and clean theme for Jekyll
+# About
 
-![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
-
-## Demo
-
-Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
-
-The main page would look like this:
-
-![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
-
-The post page would look like this:
-
-![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
+This project aims at providing a Jekyll portal to gathered content (articles and videos). We use it to spread Office 365 content in the context of COVID19 for local users and enterprises.
 
 ## Features
 
@@ -22,7 +10,7 @@ The post page would look like this:
 - [Analytics](https://analytics.google.com/analytics/web/)
 - Support Emoji
 
-## Installation:
+## Installation
 
 Fork the ``master`` branch and follow the [Jekyll Installation Documentation](https://jekyllrb.com/docs/installation/).
 
@@ -32,5 +20,4 @@ GNU General Public License v3.0
 
 ## Donate
 
-<p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
-<p align="center"><b>Thank you for your support ❤️</b></p>
+<p align="center"><b>Made with love ❤️ in New Caledonia</b></p>
