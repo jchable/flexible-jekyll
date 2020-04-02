@@ -930,7 +930,7 @@ table tfoot td {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 240px;
+  width: 340px;
   height: 100%;
   padding: 20px 10px;
   background-color: #ffffff;
@@ -938,7 +938,7 @@ table tfoot td {
 
 .sidebar-content {
   margin: 0;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .sidebar-content h3 {
@@ -952,10 +952,6 @@ table tfoot td {
 .sidebar-content li {
   list-style-type: none;
   margin: 5px;
-}
-
-.sidebar-content .tags li {
-  display: list-item;
 }
 
 .about {
@@ -1024,7 +1020,7 @@ table tfoot td {
 
 .content-box {
   padding: 20px;
-  padding-left: 260px;
+  padding-left: 360px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1435,9 +1431,6 @@ a.newer-posts:hover {
   }
   .sidebar-content {
     text-align: center;
-  }
-  .sidebar-content .tags li {
-    display: inline-block;
   }
   .sidebar footer {
     margin-bottom: 10px;
