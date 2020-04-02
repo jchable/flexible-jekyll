@@ -14,6 +14,15 @@ This project aims at providing a Jekyll portal to gathered content (articles and
 
 Fork the ``master`` branch and follow the [Jekyll Installation Documentation](https://jekyllrb.com/docs/installation/).
 
+## Post content types (article/video)
+
+Depending on whether your post is an article or a video, you need to specify this piece of information in your page configuration header.
+It is needed by filter feature or else you won't see your post appearing on home page.
+You can copy/paste one of these lines into your configuration header :
+
+    postContent: article
+    postContent: video
+
 ## License
 
 GNU General Public License v3.0
