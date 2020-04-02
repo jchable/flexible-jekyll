@@ -51,13 +51,14 @@ layout: default
   <div class="sidebar-content">
     <h3>Cat&#233gories</h3>
     <ul class="tags">
+      <li onclick="filterPosts()"><a href="" class="tag">Tous <span>({{ paginator.posts.size }})</span></a></li>
       <!--  cycles through tag list and creates header row of all tags used in site with accompanying per-tag counts...-->
       {% for this_word in tag_words %}
         <li onclick="filterPosts('{{ this_word }}')"><a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
       {% endfor %}
     </ul>
     <h3>Types de contenu</h3>
-    <ul class="content-type-filters">
+    <ul>
       <li>
         <input type="checkbox" id="article" name="article" onclick="filterPosts()" checked>
         <label for="article"> Articles</label><br>
